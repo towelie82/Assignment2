@@ -16,7 +16,8 @@
     <form class="searching">
         <fieldset>
           <label></label>
-            <input type="text" placeholder="Search Products"></input>
+            <input type="text" name="searchfield" placeholder="Search Products"></input>
+			<button type="button" name="searchbutton" onclick="search(searchfield.value)">Search...</button>
         </fieldset>
     </form>
     <div>
@@ -33,7 +34,7 @@
     <nav>
     <ul class="mainnavigation">
     <li id="page" class="dropdown">
-        <a href="mousekeyboard" class="drop">MOUSE AND KEYBOARD</a>
+        <a href="mousekeyboard" class="drop" id="keyboardmice">MOUSE AND KEYBOARD</a>
         <div class="product_menu">
           <a href="#">Wired</a>
           <a href="#">Wireless</a>
@@ -42,7 +43,7 @@
         </div>
     </li>
     <li id="page" class="dropdown">
-        <a href="headphones" class="drop">HEADPHONES</a>
+        <a href="headphones" class="drop" id="headphones">HEADPHONES</a>
         <div class="product_menu">
           <a href="#">Wired</a>
           <a href="#">Wireless</a>
@@ -51,7 +52,7 @@
         </div>
     </li>
     <li id="page" class="dropdown">
-        <a href="desktopsandlaptops" class="drop">DESKTOPS AND LAPTOPS</a>
+        <a href="desktopsandlaptops" class="drop" id="desktoplaptop">DESKTOPS AND LAPTOPS</a>
         <div class="product_menu">
           <a href="#">Dual-Core</a>
           <a href="#">Quad-Core</a>
@@ -63,7 +64,7 @@
         </div>
     </li>
     <li id="page" class="dropdown">
-        <a href="consoles" class="drop">CONSOLES</a>
+        <a href="consoles" class="drop" id="consoles">CONSOLES</a>
         <div class="product_menu">
           <a href="#">XBOX</a>
           <a href="#">PS4</a>
@@ -71,7 +72,7 @@
         </div>
     </li>
     <li id="page" class="dropdown">
-        <a href="mobilephones" class="drop">MOBILE PHONES</a>
+        <a href="mobilephones" class="drop" id="phones">MOBILE PHONES</a>
         <div class="product_menu">
           <a href="#">Android</a>
           <a href="#">Apple</a>
@@ -79,7 +80,7 @@
         </div>
     </li>
     <li id="page" class="dropdown">
-        <a href="cameras" class="drop">CAMERAS</a>
+        <a href="cameras" class="drop" id="cameras">CAMERAS</a>
         <div class="product_menu">
           <a href="#">Point and Shoot</a>
           <a href="#">DSLR</a>
@@ -118,6 +119,10 @@
 <article id="cameras" class="maincontent" hidden="hidden">
     <img class="hotdeals" src="images/hotdeals.png" ALT="NT Electronics" width="100%" height="300px" ></img>
     <h1>Cameras</h1>
+</article>
+<article>
+	<div id="results" class="results">
+	</div>
 </article>
 
 
