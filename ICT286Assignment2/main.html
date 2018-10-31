@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title> NT Electronics </title>
+    <link rel="stylesheet" href="css/main.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</head>
+<body>
+
+<div id="topBanner" class="logo">
+    <img class="topmenu" src="images/NTElectronics.png" ALT="NT Electronics" ></img>
+    <form class="searching">
+        <fieldset>
+          <label></label>
+            <input type="text" placeholder="Search Products"></input>
+        </fieldset>
+    </form>
+    <div>
+        <form action="php/includes/login.inc.php" method="post">
+            <input type="test" name="userName" placeholder="Username/Email">
+            <input type="password" name="password" placeholder="Password">
+            <button type ="submit" name="loginsubmit">Login</button>
+        </form>
+        <a href="signup.php">Sign Up</a>
+        <form action="includes/logout.php" method="post">
+            <button type="submit" name="logoutsubmit">Logout</button>
+        </form>
+    </div>         
+    <nav>
+    <ul class="mainnavigation">
+    <li id="page" class="dropdown">
+        <a href="mousekeyboard" class="drop">MOUSE AND KEYBOARD</a>
+        <div class="product_menu">
+          <a href="#">Wired</a>
+          <a href="#">Wireless</a>
+          <a href="#">Mechanical</a>
+          <a href="#">Multi-Media</a>
+        </div>
+    </li>
+    <li id="page" class="dropdown">
+        <a href="headphones" class="drop">HEADPHONES</a>
+        <div class="product_menu">
+          <a href="#">Wired</a>
+          <a href="#">Wireless</a>
+          <a href="#">On-Ear</a>
+          <a href="#">Over-Ear</a>
+        </div>
+    </li>
+    <li id="page" class="dropdown">
+        <a href="desktopsandlaptops" class="drop">DESKTOPS AND LAPTOPS</a>
+        <div class="product_menu">
+          <a href="#">Dual-Core</a>
+          <a href="#">Quad-Core</a>
+          <a href="#">Windows 10</a>
+          <a href="#">Windows 7</a>
+          <a href="#">Desktops</a>
+          <a href="#">Laptops</a>   
+          <a href="#">TouchScreen</a> 
+        </div>
+    </li>
+    <li id="page" class="dropdown">
+        <a href="consoles" class="drop">CONSOLES</a>
+        <div class="product_menu">
+          <a href="#">XBOX</a>
+          <a href="#">PS4</a>
+          <a href="#">Nintendo Switch</a>
+        </div>
+    </li>
+    <li id="page" class="dropdown">
+        <a href="mobilephones" class="drop">MOBILE PHONES</a>
+        <div class="product_menu">
+          <a href="#">Android</a>
+          <a href="#">Apple</a>
+          <a href="#">Windows</a>
+        </div>
+    </li>
+    <li id="page" class="dropdown">
+        <a href="cameras" class="drop">CAMERAS</a>
+        <div class="product_menu">
+          <a href="#">Point and Shoot</a>
+          <a href="#">DSLR</a>
+          <a href="#">Lenses</a>
+        </div>
+    </li>
+    </ul>
+    </nav>
+</div>
+
+
+<article id="mainpage" class="maincontent">
+    <img class="hotdeals" src="images/hotdeals.png" ALT="NT Electronics" width="100%" height="300px" ></img>
+    <h1>Todays Deals</h1>
+</article>
+<article id="mousekeyboard" class="maincontent" hidden="hidden">
+    <img class="hotdeals" src="images/hotdeals.png" ALT="NT Electronics" width="100%" height="300px" ></img>
+    <h1>Mouse and Keyboards</h1>
+</article>
+<article id="headphones" class="maincontent" hidden="hidden">
+    <img class="hotdeals" src="images/hotdeals.png" ALT="NT Electronics" width="100%" height="300px" ></img>
+    <h1>Headphones</h1>
+</article>
+<article id="desktopsandlaptops" class="maincontent" hidden="hidden">
+    <img class="hotdeals" src="images/hotdeals.png" ALT="NT Electronics" width="100%" height="300px" ></img>
+    <h1>Desktops and Laptops</h1>
+</article>
+<article id="consoles" class="maincontent" hidden="hidden">
+    <img class="hotdeals" src="images/hotdeals.png" ALT="NT Electronics" width="100%" height="300px" ></img>
+    <h1>Consoles</h1>
+</article>
+<article id="mobilephones" class="maincontent" hidden="hidden">
+    <img class="hotdeals" src="images/hotdeals.png" ALT="NT Electronics" width="100%" height="300px" ></img>
+    <h1>Mobile Phones</h1>
+</article>
+<article id="cameras" class="maincontent" hidden="hidden">
+    <img class="hotdeals" src="images/hotdeals.png" ALT="NT Electronics" width="100%" height="300px" ></img>
+    <h1>Cameras</h1>
+</article>
+
+
+
+</body>
+</html>
